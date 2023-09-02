@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            font-family: "Poppins", sans-serif;
+            padding: 0;
+        }
+        section:nth-child(2n){
+            background-color: #f8f8f8;
+        }
+        section .title{
+            margin-bottom: 3rem;
+        }
+        section .title h4{
+            font-size: 2.35rem;
+            color: #ed4848;
+            position: relative;
+        }
+        section .title h2{
+            font-size: 3.5rem;
+        }
+        section .title p{
+            font-size: 1.15rem;
+        }
+        section .about-self {
+            display: flex; 
+            align-items: center; 
+        }
+        section .about-self .left{
+            flex: 1; 
+        }
+        section .about-self .left img{
+            max-width: 100%;
+        }
+        section .about-self .right{
+            flex: 1; 
+            padding: 0 2rem;
+        }
+        section .about-self .right h3{
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+        }
+        section .about-self .right h3 strong{
+            color: #ed4848;
+        }
+        section .about-self .right p{
+            font-size: 1.15rem;
+            margin: 1rem 0;
+        }
+        section .about-self .right .social a{
+            font-size: 2.5rem;
+            margin-right: 0.2rem;
+        }
+        #idDog {
+            color: #ed4848;
+        }
+    </style>
+</head>
+<body>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="title">
+                <h4>Who Am I</h4>
+                <h2>About Me</h2>
+            </div>
+            <div class="about-self">
+                <div class="left">
+                    <img src="MyPhoto.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h3>노인과 <strong id="idDog">반려동물</strong>을 위한 개발자</h3>
+                    <p><strong>IT💻와 생각💡을 좋아하는 웹 개발자 박규민 입니다 <br> 다양한 언어를 사용해서 웹 사이트를 만듭니다</strong></p>
+                    <p><strong>이름:</strong> 박규민</p>
+                    <p><strong>전공:</strong> Web, Server,DB</p>
+                    <p><strong>학교:</strong>대구소프트웨어 마이스터 고등학교</p>
+                    <p><strong>깃허브:</strong><a href="https://github.com/kyumin7487">kyumin7487</a></p>
+                    <p><strong>인스타:</strong><a href="https://www.instagram.com/k_min_120/">k_min_120</a></p>
+                    <p><strong>전화번호: </strong>01040827487</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

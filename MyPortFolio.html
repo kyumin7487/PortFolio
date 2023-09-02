@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYPortFolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-z1ExIhpuNUNpijG6HFlCOWWPUnQ0HZVv4C1IxHK+0fKtc0reGedTTHkYVPHQ3YI9kiC3B+syT+20JHxh30icg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container {
+            width: 1140px;
+            margin: 0 auto;
+        }
+        header {
+            position: fixed;
+            color: white;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+            padding: 1rem;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        header nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin-left: -5px; 
+        }
+        header nav ul li {
+            padding: 10px;
+        }
+        header button {
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+        }
+        header h1 button {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        header nav ul li button {
+            font-size: 1.1rem;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.1); 
+            padding: 10px 15px; 
+            border-radius: 5px; 
+            margin-left: 5px; 
+        }
+        main {
+            width: 100%;
+            height: 100vh;
+            color: white;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/me.jpg') center center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        main h4 {
+            font-size: 2rem;
+        }
+        main h2 {
+            font-size: 3.5rem;
+            margin: 2rem 0;
+            letter-spacing: 3px;
+        }
+        main p {
+            max-width: 500px;
+            margin: 0 auto;
+            font-size: 1.25rem;
+        }
+        main button.download {
+            background-color: transparent;
+            border: 3px solid white;
+            border-radius: 20px;
+            padding: 1rem 2rem;
+            margin-top: 3rem;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        main button.mouse {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: upDown 1s ease-in-out infinite;
+            cursor: pointer;
+        }
+        @keyframes upDown {
+            0% {
+                bottom: 1rem;
+            }
+            50% {
+                bottom: 1.5rem;
+            }
+            100% {
+                bottom: 1rem;
+            }
+        }
+        main h2 span::after {
+            content: "";
+            height: 40px;
+            width: 3px;
+            background-color: #fff;
+            display: inline-block;
+            animation: blink .7s ease-in-out infinite;
+        }
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+        main h2 {
+            font-size: 3.5rem;
+            margin: 2rem 0;
+            letter-spacing: 3px;
+            font-family: "Varela Round", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <main id="Main">
+        <div class="container">
+            <h4>Welcome</h4>
+            <h2>I'm A <span>Full-Stack Developer</span></h2>
+            <p>풀스택을 꿈꾸는 고등학생 개발자 박규민입니다!</p>
+            <button class="Download">Download CV</button>
+            <button class="mouse"><i class="fas fa-mouse"></i></button>
+        </div>
+    </main>
+    <header>
+        <div class="container">
+            <h1>
+                <button>KyuMin</button>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <button onclick="window.location.href='AboutMe.html'">About</button>
+                    </li>
+                    <li>
+                        <button onclick="window.location.href='Portfolio.html'">Portfolio</button>
+                    </li>
+                    <li>
+                        <button onclick="window.location.href='Contact.html'">Contact</button>
+                    </li>
+                    <li>
+                        <button onclick="window.location.href='unknow.html'"></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
